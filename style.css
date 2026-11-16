@@ -1,0 +1,200 @@
+/* Header 1 formatting to change font, colour and alignment */
+h1 {
+    color: rgb(110, 21, 55);
+    font-family: Arial, Helvetica;
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Header 2 formatting to change font, colour, 
+alignment and padding*/
+h2 {
+    color: rgb(110, 21, 55);
+    font-family: Arial, Helvetica;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Header 2 formatting to change font, colour, 
+alignment and padding*/
+h3 {
+    color: rgb(110, 21, 55);
+    font-family: Arial, Helvetica;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+}
+
+h5 {
+    color: rgb(110, 21, 55);
+    font-family: Arial, Helvetica;
+    font-size: 30px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Paragraph formatting to change font, colour, 
+alignment and background*/
+p {
+    color: brown;
+    font-family: Arial, Helvetica;
+    font-size: 25px;
+    text-align: center;
+    width: 1100 px;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* List item formatting to change style and colour*/
+.list-group-item {
+    background-color: transparent;
+    border: none;
+    color: brown;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect */
+.list-group-item:hover {
+    background-color: rgb(167, 117, 159);
+    border-radius: 5px;
+}
+
+/* Body formatting */
+body {
+    background-color: rgb(150, 116, 144);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button formatting */
+.btn-primary {
+    color: rgb(110, 21, 55);
+    font-weight: bold;
+}
+
+/* Image formatting, source used can be found at:
+ https://www.w3schools.com/howto/howto_css_image_center.asp */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    height: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+img:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25) !important;
+}
+
+/*Table formtting, source used can be found at:
+https://www.w3schools.com/Css/css_table_size.asp*/
+/* Table formatting */
+/* Custom table formatting */
+.custom-table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: rgb(160, 105, 151);
+    color: white;
+}
+
+/* Table cells */
+.custom-table th,
+.custom-table td {
+    padding: 10px;
+    border: none !important;
+    background-color: rgb(199, 161, 193);
+    color: brown;
+    text-align: left;
+}
+
+/* Vertical divider between columns */
+.custom-table tbody td:first-child {
+    border-right: 2px solid brown !important;
+}
+
+/* Table hover effect */
+.custom-table tbody tr:hover td {
+    background-color: rgb(167, 117, 159);
+    transition: background-color 0.3s ease;
+}
+
+
+/* Bootstrap cards */
+.card {
+    background-color: rgb(199, 161, 193);
+    border: 1px solid brown;
+    margin: 15px;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Bootstrap navbar */
+.custom-navbar {
+    background-color: rgb(199, 161, 193);
+    padding: 10px;
+}
+
+/* Navigation links */
+.custom-navbar .nav-link {
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Navigation hover effect */
+.custom-navbar .nav-link:hover {
+    background-color: rgb(195, 155, 185);
+    color: white;
+}
+
+/* Formatting for smaller screens */
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 35px;
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h5 {
+        font-size: 20px
+    }
+
+    p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .center {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
